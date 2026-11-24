@@ -1,0 +1,13 @@
+{
+ "title": "TEMPLATE - replace at step 2",
+ "fps": 30,
+ "durationSec": 3,
+ "hook": "",
+ "quote": null,
+ "warmInteriors": ["hall"],
+ "shots": [
+  {"id": "s1", "place": "street", "light": "day", "at": 0, "action": "example",
+   "cam": [{"at": 0, "pos": [0.6, 1.6, 4], "look": [0, 1.4, -1], "fov": 50}, {"at": 1.5, "pos": [0.2, 1.58, 3.2], "look": [0.1, 1.45, -1], "fov": 47}],
+   "actors": [{"id": "scribe", "x": 0.2, "z": -1.0, "facing": 1, "beats": [{"at": 0, "expr": "neutral"}]}]}
+ ]
+}

@@ -1,0 +1,32 @@
+{
+  "name": "story-short",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "studio": "remotion studio src/index.ts",
+    "audit": "tsx tools/scene_audit.ts",
+    "stills": "node tools/bridge-stills.mjs",
+    "sheet": "remotion still src/index.ts CharacterSheet stills/character_sheet.png --gl=angle",
+    "draft": "remotion render src/index.ts BridgeShort out/draft_silent.mp4 --scale=0.5 --gl=angle --concurrency=2 --muted",
+    "final": "remotion render src/index.ts BridgeShort out/final_silent.mp4 --scale=1.3333333333333333 --gl=angle --concurrency=2 --crf=16 --muted"
+  },
+  "dependencies": {
+    "@react-three/fiber": "9.3.0",
+    "@react-three/postprocessing": "3.0.4",
+    "@remotion/cli": "4.0.545",
+    "@remotion/google-fonts": "4.0.545",
+    "@remotion/renderer": "4.0.545",
+    "@remotion/three": "4.0.545",
+    "postprocessing": "6.37.6",
+    "react": "19.1.1",
+    "react-dom": "19.1.1",
+    "remotion": "4.0.545",
+    "three": "0.178.0"
+  },
+  "devDependencies": {
+    "@types/react": "19.1.12",
+    "@types/three": "0.178.1",
+    "tsx": "4.20.5",
+    "typescript": "5.9.2"
+  }
+}
